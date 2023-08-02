@@ -1,17 +1,16 @@
 # Hyperloop_Passenger_Booking
 
-I have used OOPS concept to run this program. I have created a function for each commands:
-
+OOPS concept is used in this program.
+There are 4 Command in this program:
 INIT
 ADD_PASSENGER 
 START_POD 
 PRINT_Q
 
-I have created a structure for each command to store the data in the following manner. so the data's were stored in the array.
+Each command in this program is coded in seperate function. Sequence of instruction or data is stored under the single name inside the structure.
 
-
-INIT Command  - Initializes the system with
-Number of interconnecting routes (N) and the Starting station.
+INIT Command
+Initializes the system with Number of interconnecting routes (N) and the Starting station.
 Next N lines denotes connection between two interconnections and their distance.
 	Without initializing - all other commands should throw proper error.
 
@@ -26,4 +25,7 @@ NAME ROUTE
 PRINT_Q command prints the number of passengers and their details who are remaining in the queue.
 COUNT
 NAME AGE
+
+when selecting each command in the main function, appropriate sub function is called. Global variable of each structure store the sequence of data.
+
 
